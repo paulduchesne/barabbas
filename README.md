@@ -1,2 +1,2 @@
 # Barabbas
-Minimal database implementation of en15907.
+Minimal database implementation of EN15907.
