@@ -1,13 +1,14 @@
 
 CREATE DATABASE IF NOT EXISTS barabbas;
+
 USE barabbas;
 
 CREATE TABLE agent (
-    agent_id INT PRIMARY KEY,
+    agent_id INT PRIMARY KEY
 );
 
 CREATE TABLE `event` (
-    event_id INT PRIMARY KEY,
+    event_id INT PRIMARY KEY
 );
 
 CREATE TABLE event_agent (
@@ -19,7 +20,7 @@ CREATE TABLE event_agent (
 );
 
 CREATE TABLE item (
-    item_id INT PRIMARY KEY,
+    item_id INT PRIMARY KEY
 );
 
 CREATE TABLE item_agent (
@@ -39,7 +40,7 @@ CREATE TABLE item_event (
 );
 
 CREATE TABLE manifestation (
-    manifestation_id INT PRIMARY KEY,
+    manifestation_id INT PRIMARY KEY
 );
 
 CREATE TABLE manifestation_agent (
@@ -59,7 +60,7 @@ CREATE TABLE manifestation_event (
 );
 
 CREATE TABLE variant (
-    variant_id INT PRIMARY KEY,
+    variant_id INT PRIMARY KEY
 );
 
 CREATE TABLE variant_agent (
@@ -87,7 +88,7 @@ CREATE TABLE variant_manifestation (
 );
 
 CREATE TABLE work (
-    work_id INT PRIMARY KEY,
+    work_id INT PRIMARY KEY
 );
 
 CREATE TABLE work_agent (
