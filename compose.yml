@@ -10,3 +10,15 @@ services:
       MYSQL_ROOT_PASSWORD: testpass
     volumes:
       - ./EN15907.sql:/docker-entrypoint-initdb.d/EN15907.sql
+  api:
+    image: barabbas-api
+    container_name: barabbas-api
+    restart: always
+    ports:
+      - "5000:5000"
+  app:
+    image: barabbas-app
+    container_name: barabbas-app
+    restart: always
+    ports:
+      - "5001:5001"
