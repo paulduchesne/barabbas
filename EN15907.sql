@@ -4,7 +4,8 @@ CREATE DATABASE IF NOT EXISTS barabbas;
 USE barabbas;
 
 CREATE TABLE agent (
-    agent_id INT PRIMARY KEY
+    agent_id INT PRIMARY KEY AUTO_INCREMENT,
+    agent_name VARCHAR(255)
 );
 
 CREATE TABLE `event` (
@@ -88,7 +89,8 @@ CREATE TABLE variant_manifestation (
 );
 
 CREATE TABLE work (
-    work_id INT PRIMARY KEY
+    work_id INT PRIMARY KEY AUTO_INCREMENT,
+    work_title VARCHAR(255)
 );
 
 CREATE TABLE work_agent (
