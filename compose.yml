@@ -16,3 +16,9 @@ services:
     restart: always
     ports:
       - "5000:5000"
+  app:
+    image: barabbas-app
+    container_name: barabbas-app
+    restart: always
+    ports:
+      - "5001:5001"

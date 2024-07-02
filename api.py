@@ -14,19 +14,11 @@ credentials = {
     'database': 'barabbas'
 }
 
-@app.route('/api/work', methods=['GET'])
-def work_records():
+@app.route('/api/work/<work_id>', methods=['GET'])
+def work_records(work_id):
    
    connection = mariadb.connect(**credentials)
-   df = pandas.read_sql("select * from work", connection)
-   
-   return df.to_json(orient='records')
-
-@app.route('/api/agent', methods=['GET'])
-def agent_records():
-   
-   connection = mariadb.connect(**credentials)
-   df = pandas.read_sql("select * from agent", connection)
+   df = pandas.read_sql(f"select * from work where work_id = {work_id}", connection)
    
    return df.to_json(orient='records')
 
