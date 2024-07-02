@@ -1,8 +1,6 @@
 # Barabbas
 Minimal database implementation of EN15907.
 
-**Schema diagram.**
-
 ![](EN15907.drawio.svg)
 
 **Deploy system.**
