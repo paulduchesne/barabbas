@@ -98,7 +98,12 @@ CREATE TABLE work_agent (
     agent_id INT,
     PRIMARY KEY (work_id, agent_id),
     FOREIGN KEY (work_id) REFERENCES work(work_id),
-    FOREIGN KEY (agent_id) REFERENCES agent(agent_id)
+    FOREIGN KEY (agent_id) REFERENCES agent(agent_id),
+    work_agent_activity VARCHAR(255),
+    work_agent_creditRank INT,
+    work_agent_nameUsed VARCHAR(255),
+    work_agent_activityDetail VARCHAR(255),
+    work_agent_character VARCHAR(255)
 );
 
 CREATE TABLE work_event (
