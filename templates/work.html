@@ -1,21 +1,22 @@
-
+<title>{{data.work_title}}</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     </style>
 <center>
-    <div style="padding-top:100px"></div>
-<div style="width:1000px;background:#f8f8f8;text-align:left;padding:20px;">
-<b><tspan style="font-family:Inter">{{data.work_title}}</tspan></b><br><br>
-
+    <div style="padding-top:100px;text-align:left;background:white;width:1000px;padding:20px;"><tspan style="font-family:Inter"><b>database</b></div>
+<div style="width:1000px;background:white;text-align:left;padding:20px;padding-top:200px">
+<b><tspan style="font-family:Inter;font-weight:100;font-size:48">{{data.work_title}}</tspan></b><br><br>
+<tspan style="font-family:Inter;font-weight:100;font-size:18">
+<b>cast</b><br><br>
 {% for cast in data.cast %}
-<tspan style="font-family:Inter">{{ cast.work_agent_nameUsed }}
+{{ cast.work_agent_nameUsed }}
 
     {% if cast.work_agent_character %}
     [{{cast.work_agent_character}}]
 
     {% endif %}
-</tspan><br>
+<br>
 {% endfor %}
-
+</tspan>
 </div>
 </center>
